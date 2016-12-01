@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/danguto/node_first_example/issues"
   },
-  "homepage": "https://github.com/danguto/node_first_example#readme"
+  "homepage": "https://github.com/danguto/node_first_example#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }

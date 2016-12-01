@@ -1,14 +1,12 @@
 /**
  * Created by dangu on 30/11/2016.
  */
-var http = require('http');
 var port = 1337;
+var express = require('./config/express');
+var app = express();
 
-http.createServer(function (req, res) {
-    res.writeHead(200, {
-        'Content-Type': 'text/plain'
-    });
-    res.end("Hello Mitnick, you've just stumbled on the simplest web server ever");
-}).listen(port);
+app.listen(port);
+
+module.exports = app;
 
 console.log('Our awesome web server running at http://localhost:'+ port);
